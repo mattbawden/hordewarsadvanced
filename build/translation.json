@@ -1,6 +1,22 @@
 {
+  "Career One": "Career One",
+  "Career Two": "Career Two",
+  "Character Name": "Character Name",
+  "Crowns": "Crowns",
+  "Damage Die": "Damage Die",
+  "Defense": "Defense",
+  "Experience": "Experience",
   "header": "Character Header Image",
+  "Hit Points": "Hit Points",
+  "Level": "Level",
+  "Maneuver Used?": "Maneuver Used?",
+  "Marks": "Marks",
+  "Species": "Species",
+  "Speed": "Speed",
   "tabs-hordewarsadvanced-character": "Character",
   "tabs-hordewarsadvanced-npc": "NPC",
-  "tabs-hordewarsadvanced-settings": "Settings"
+  "tabs-hordewarsadvanced-settings": "Settings",
+  "Tier": "Tier",
+  "Total Weight": "Total Weight",
+  "Type": "Type"
 }

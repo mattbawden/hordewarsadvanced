@@ -3,6 +3,8 @@
 @mixin all {
   @include k.variables;
   // Customize your variables here
+  --lm-selectedColor: black;
+  --lm-unselectedColor: #d0d0d0;
 }
 
 @mixin dark {

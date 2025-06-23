@@ -2,7 +2,7 @@
 <button name="act_k-network-call" hidden="" type="action">
 </button>
 <input name="attr_sheet_version" value="0" type="hidden" title="@{sheet_version}"/>
-<main id="main"><!-- sectionName:hordewarsadvanced -->
+<main id="main"><img class="image-logo" name="attr_header" src="https://raw.githubusercontent.com/mattbawden/hordewarsadvanced/refs/heads/main/assets/images/character/hordewarslogo.png" alt="Character Header Image" data-i18n-alt="header" title="@{header}"/><!-- sectionName:hordewarsadvanced -->
   <input name="attr_hordewarsadvanced_tab" value="nav-tabs-hordewarsadvanced--character" type="hidden" title="@{hordewarsadvanced_tab}"/>
   <div class="tabs tabs--hordewarsadvanced flex-box tiny-gap">
     <nav class="tabs__header tabs--hordewarsadvanced__header">
@@ -22,12 +22,444 @@
       </ul>
     </nav>
     <div class="tabs__body tabs--hordewarsadvanced__body">
-      <article class="tabs__container tabs--hordewarsadvanced__container tabs--hordewarsadvanced__container--character" data-container-tab="hordewarsadvanced" data-tab="character"><img name="attr_header" src="https://raw.githubusercontent.com/mattbawden/hordewarsadvanced/refs/heads/main/assets/images/character/hordewarslogo.png" alt="Character Header Image" data-i18n-alt="header" title="@{header}"/>
+      <article class="tabs__container tabs--hordewarsadvanced__container tabs--hordewarsadvanced__container--character" data-container-tab="hordewarsadvanced" data-tab="character">
+  <label class="input-label"><span class="input-label__text" data-i18n="Character Name"></span>
+    <input class="input-label__input" name="attr_character_name" type="text" title="@{character_name}"/>
+  </label>
+  <label class="input-label"><span class="input-label__text" data-i18n="Level"></span>
+    <input class="input-label__input" name="attr_level" type="number" title="@{level}"/>
+  </label>
+  <label class="input-label"><span class="input-label__text" data-i18n="Species"></span>
+    <select class="input-label__input" name="attr_species" title="@{species}">
+      <option value="">Select One
+      </option>
+      <option value="human">Human
+      </option>
+      <option value="dwarf">Dwarf
+      </option>
+      <option value="elf">Elf
+      </option>
+      <option value="halfling">Halfling
+      </option>
+      <option value="orc">Orc
+      </option>
+    </select>
+  </label>
+  <label class="input-label" for="experience"><span class="input-label__text" data-i18n="Experience"></span><span class="fill-box">
+      <div class="radio-container">
+        <input class="radio-input" name="attr_experience1" type="checkbox" value="1" id="experience-1" title="@{experience1}"/>
+        <input class="radio-input" name="attr_experience2" type="checkbox" value="2" id="experience-2" title="@{experience2}"/>
+        <input class="radio-input" name="attr_experience3" type="checkbox" value="3" id="experience-3" title="@{experience3}"/>
+        <input class="radio-input" name="attr_experience4" type="checkbox" value="4" id="experience-4" title="@{experience4}"/>
+        <input class="radio-input" name="attr_experience5" type="checkbox" value="5" id="experience-5" title="@{experience5}"/>
+        <input class="radio-input" name="attr_experience6" type="checkbox" value="6" id="experience-6" title="@{experience6}"/>
+        <input class="radio-input" name="attr_experience7" type="checkbox" value="7" id="experience-7" title="@{experience7}"/>
+        <input class="radio-input" name="attr_experience8" type="checkbox" value="8" id="experience-8" title="@{experience8}"/>
+        <input class="radio-input" name="attr_experience9" type="checkbox" value="9" id="experience-9" title="@{experience9}"/>
+        <input class="radio-input" name="attr_experience10" type="checkbox" value="10" id="experience-10" title="@{experience10}"/>
+        <input class="radio-input" name="attr_experience11" type="checkbox" value="11" id="experience-11" title="@{experience11}"/>
+        <input class="radio-input" name="attr_experience12" type="checkbox" value="12" id="experience-12" title="@{experience12}"/>
+      </div></span></label>
+  <label class="input-label"><span class="input-label__text" data-i18n="Career One"></span>
+    <select class="input-label__input" name="attr_career_one" title="@{career_one}">
+      <option value="">Select One
+      </option>
+      <option value="acolyte">Acolyte
+      </option>
+      <option value="archer">Archer
+      </option>
+      <option value="assassin">Assassin
+      </option>
+      <option value="blademaster">Blademaster
+      </option>
+      <option value="crusader">Crusader
+      </option>
+      <option value="deepdelver">Deep Delver
+      </option>
+      <option value="huntsman">Huntsman
+      </option>
+      <option value="knight">Knight
+      </option>
+      <option value="mercenary">Mercenary
+      </option>
+      <option value="monk">Monk
+      </option>
+      <option value="priest">Priest
+      </option>
+      <option value="skald">Skald
+      </option>
+      <option value="tavernwench">Tavern Wench
+      </option>
+      <option value="thief">Thief
+      </option>
+      <option value="viking">Viking
+      </option>
+      <option value="warlord">Warlord
+      </option>
+      <option value="bluewizard">Wizard, Blue
+      </option>
+      <option value="brownwizard">Wizard, Brown
+      </option>
+      <option value="greywizard">Wizard, Grey
+      </option>
+      <option value="redwizard">Wizard, Red
+      </option>
+      <option value="whitewizard">Wizard, White
+      </option>
+    </select>
+  </label>
+  <label class="input-label"><span class="input-label__text" data-i18n="Speed"></span>
+    <input class="input-label__input" name="attr_speed" type="text" title="@{speed}"/>
+  </label>
+  <label class="input-label"><span class="input-label__text" data-i18n="Career Two"></span>
+    <select class="input-label__input" name="attr_career_two" title="@{career_two}">
+      <option value="">Select One
+      </option>
+      <option value="acolyte">Acolyte
+      </option>
+      <option value="archer">Archer
+      </option>
+      <option value="assassin">Assassin
+      </option>
+      <option value="blademaster">Blademaster
+      </option>
+      <option value="crusader">Crusader
+      </option>
+      <option value="deepdelver">Deep Delver
+      </option>
+      <option value="huntsman">Huntsman
+      </option>
+      <option value="knight">Knight
+      </option>
+      <option value="mercenary">Mercenary
+      </option>
+      <option value="monk">Monk
+      </option>
+      <option value="priest">Priest
+      </option>
+      <option value="skald">Skald
+      </option>
+      <option value="tavernwench">Tavern Wench
+      </option>
+      <option value="thief">Thief
+      </option>
+      <option value="viking">Viking
+      </option>
+      <option value="warlord">Warlord
+      </option>
+      <option value="bluewizard">Wizard, Blue
+      </option>
+      <option value="brownwizard">Wizard, Brown
+      </option>
+      <option value="greywizard">Wizard, Grey
+      </option>
+      <option value="redwizard">Wizard, Red
+      </option>
+      <option value="whitewizard">Wizard, White
+      </option>
+    </select>
+  </label>
+  <label class="input-label"><span class="input-label__text" data-i18n="Tier"></span>
+    <input class="input-label__input" name="attr_tier" type="number" title="@{tier}"/>
+  </label>
+  <div class="attribute-grid" name="attr_attribute_grid" title="@{attribute_grid}">
+    <div class="span4 header-label">Attribute + Bonus = Total</div>
+    <label class="attribute-label">Fitness</label>
+    <input class="attribute-input" name="attr_fitness" type="number" value="0" title="@{fitness}"/>
+    <input class="attribute-input" name="attr_fitness_bonus" type="number" value="0" title="@{fitness_bonus}"/>
+    <input class="attribute-input" name="attr_fitness_total" type="number" value="0" title="@{fitness_total}"/>
+    <button class="roll-button" name="roll_fitness_roll" value="&{template:default} {{name= @{character_name} | Fitness Roll}} {{result=[[1d12 + @{fitness_total} + ?{Circumstance Bonus|0} &{tracker}]]}}" type="roll">
+    </button>
+    <label class="attribute-label">Reflexes</label>
+    <input class="attribute-input" name="attr_reflexes" type="number" value="0" title="@{reflexes}"/>
+    <input class="attribute-input" name="attr_reflexes_bonus" type="number" value="0" title="@{reflexes_bonus}"/>
+    <input class="attribute-input" name="attr_reflexes_total" type="number" value="0" title="@{reflexes_total}"/>
+    <button class="roll-button" name="roll_reflexes_roll" value="&{template:default} {{name= @{character_name} | Reflexes Roll}} {{result=[[1d12 + @{reflexes_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="attribute-label">Senses</label>
+    <input class="attribute-input" name="attr_senses" type="number" value="0" title="@{senses}"/>
+    <input class="attribute-input" name="attr_senses_bonus" type="number" value="0" title="@{senses_bonus}"/>
+    <input class="attribute-input" name="attr_senses_total" type="number" value="0" title="@{senses_total}"/>
+    <button class="roll-button" name="roll_senses_roll" value="&{template:default} {{name= @{character_name} | Senses Roll}} {{result=[[1d12 + @{senses_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="attribute-label">Willpower</label>
+    <input class="attribute-input" name="attr_willpower" type="number" value="0" title="@{willpower}"/>
+    <input class="attribute-input" name="attr_willpower_bonus" type="number" value="0" title="@{willpower_bonus}"/>
+    <input class="attribute-input" name="attr_willpower_total" type="number" value="0" title="@{willpower_total}"/>
+    <button class="roll-button" name="roll_willpower_roll" value="&{template:default} {{name= @{character_name} | Willpower Roll}} {{result=[[1d12 + @{willpower_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+  </div>
+  <div class="other-attributes" name="attr_other_attributes})" title="@{other_attributes})}">
+    <label class="input-label"><span class="input-label__text" data-i18n="Defense"></span>
+      <input class="input-label__input" name="attr_defense" type="number" title="@{defense}"/>
+    </label>
+    <label class="input-label"><span class="input-label__text" data-i18n="Hit Points"></span>
+      <input class="input-label__input" name="attr_hit_points" type="number" title="@{hit_points}"/>
+    </label>
+    <label class="header-label">Protection & Immunity</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_protection_and_immunity" title="@{protection_and_immunity}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_protection_and_immunity" placeholder="Enter Protections & Immunities here..." title="@{protection_and_immunity}"></textarea>
+    </div>
+  </div>
+  <div class="skill-grid" name="attr_skill_grid" title="@{skill_grid}">
+    <div class="span4 header-label">Skill + Bonus = Total</div>
+    <label class="skill-label">Art & Culture</label>
+    <input class="skill-input" name="attr_art_and_culture" type="number" value="0" title="@{art_and_culture}"/>
+    <input class="skill-input" name="attr_art_and_culture_bonus" type="number" value="0" title="@{art_and_culture_bonus}"/>
+    <input class="skill-input" name="attr_art_and_culture_total" type="number" value="0" title="@{art_and_culture_total}"/>
+    <button class="roll-button" name="roll_art_and_culture_roll" value="&{template:default} {{name= @{character_name} | Art & Culture Roll}} {{result=[[1d12 + @{art_and_culture_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Astronomy</label>
+    <input class="skill-input" name="attr_astronomy" type="number" value="0" title="@{astronomy}"/>
+    <input class="skill-input" name="attr_astronomy_bonus" type="number" value="0" title="@{astronomy_bonus}"/>
+    <input class="skill-input" name="attr_astronomy_total" type="number" value="0" title="@{astronomy_total}"/>
+    <button class="roll-button" name="roll_astronomy_roll" value="&{template:default} {{name= @{character_name} | Astronomy Roll}} {{result=[[1d12 + @{astronomy_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Athletics</label>
+    <input class="skill-input" name="attr_athletics" type="number" value="0" title="@{athletics}"/>
+    <input class="skill-input" name="attr_athletics_bonus" type="number" value="0" title="@{athletics_bonus}"/>
+    <input class="skill-input" name="attr_athletics_total" type="number" value="0" title="@{athletics_total}"/>
+    <button class="roll-button" name="roll_athletics_roll" value="&{template:default} {{name= @{character_name} | Athletics Roll}} {{result=[[1d12 + @{athletics_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Burglary</label>
+    <input class="skill-input" name="attr_burglary" type="number" value="0" title="@{burglary}"/>
+    <input class="skill-input" name="attr_burglary_bonus" type="number" value="0" title="@{burglary_bonus}"/>
+    <input class="skill-input" name="attr_burglary_total" type="number" value="0" title="@{burglary_total}"/>
+    <button class="roll-button" name="roll_burglary_roll" value="&{template:default} {{name= @{character_name} | Burglary Roll}} {{result=[[1d12 + @{burglary_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Combat</label>
+    <input class="skill-input" name="attr_combat" type="number" value="0" title="@{combat}"/>
+    <input class="skill-input" name="attr_combat_bonus" type="number" value="0" title="@{combat_bonus}"/>
+    <input class="skill-input" name="attr_combat_total" type="number" title="@{combat_total}"/>
+    <button class="roll-button" name="roll_combat_roll" value="&{template:default} {{name= @{character_name} | Combat Roll}} {{result=[[1d12 + @{combat_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Commerce</label>
+    <input class="skill-input" name="attr_commerce" type="number" value="0" title="@{commerce}"/>
+    <input class="skill-input" name="attr_commerce_bonus" type="number" value="0" title="@{commerce_bonus}"/>
+    <input class="skill-input" name="attr_commerce_total" type="number" value="0" title="@{commerce_total}"/>
+    <button class="roll-button" name="roll_commerce_roll" value="&{template:default} {{name= @{character_name} | Commerce Roll}} {{result=[[1d12 + @{commerce_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Deception</label>
+    <input class="skill-input" name="attr_deception" type="number" value="0" title="@{deception}"/>
+    <input class="skill-input" name="attr_deception_bonus" type="number" value="0" title="@{deception_bonus}"/>
+    <input class="skill-input" name="attr_deception_total" type="number" value="0" title="@{deception_total}"/>
+    <button class="roll-button" name="roll_deception_roll" value="&{template:default} {{name= @{character_name} | Deception Roll}} {{result=[[1d12 + @{deception_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Engineering</label>
+    <input class="skill-input" name="attr_engineering" type="number" value="0" title="@{engineering}"/>
+    <input class="skill-input" name="attr_engineering_bonus" type="number" value="0" title="@{engineering_bonus}"/>
+    <input class="skill-input" name="attr_engineering_total" type="number" value="0" title="@{engineering_total}"/>
+    <button class="roll-button" name="roll_engineering_roll" value="&{template:default} {{name= @{character_name} | Engineering Roll}} {{result=[[1d12 + @{engineering_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Faith</label>
+    <input class="skill-input" name="attr_faith" type="number" value="0" title="@{faith}"/>
+    <input class="skill-input" name="attr_faith_bonus" type="number" value="0" title="@{faith_bonus}"/>
+    <input class="skill-input" name="attr_faith_total" type="number" value="0" title="@{faith_total}"/>
+    <button class="roll-button" name="roll_faith_roll" value="&{template:default} {{name= @{character_name} | Faith Roll}} {{result=[[1d12 + @{faith_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">History & Law</label>
+    <input class="skill-input" name="attr_history_and_law" type="number" value="0" title="@{history_and_law}"/>
+    <input class="skill-input" name="attr_history_and_law_bonus" type="number" value="0" title="@{history_and_law_bonus}"/>
+    <input class="skill-input" name="attr_history_and_law_total" type="number" value="0" title="@{history_and_law_total}"/>
+    <button class="roll-button" name="roll_history_and_law_roll" value="&{template:default} {{name= @{character_name} | History & Law Roll}} {{result=[[1d12 + @{history_and_law_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Influence</label>
+    <input class="skill-input" name="attr_influence" type="number" value="0" title="@{influence}"/>
+    <input class="skill-input" name="attr_influence_bonus" type="number" value="0" title="@{influence_bonus}"/>
+    <input class="skill-input" name="attr_influence_total" type="number" value="0" title="@{influence_total}"/>
+    <button class="roll-button" name="roll_influence_roll" value="&{template:default} {{name= @{character_name} | Influence Roll}} {{result=[[1d12 + @{influence_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Intuition</label>
+    <input class="skill-input" name="attr_intuition" type="number" value="0" title="@{intuition}"/>
+    <input class="skill-input" name="attr_intuition_bonus" type="number" value="0" title="@{intuition_bonus}"/>
+    <input class="skill-input" name="attr_intuition_total" type="number" value="0" title="@{intuition_total}"/>
+    <button class="roll-button" name="roll_intuition_roll" value="&{template:default} {{name= @{character_name} | Intuition Roll}} {{result=[[1d12 + @{intuition_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Investigate</label>
+    <input class="skill-input" name="attr_investigate" type="number" value="0" title="@{investigate}"/>
+    <input class="skill-input" name="attr_investigate_bonus" type="number" value="0" title="@{investigate_bonus}"/>
+    <input class="skill-input" name="attr_investigate_total" type="number" value="0" title="@{investigate_total}"/>
+    <button class="roll-button" name="roll_investigate_roll" value="&{template:default} {{name= @{character_name} | Investigate Roll}} {{result=[[1d12 + @{investigate_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Language</label>
+    <input class="skill-input" name="attr_language" type="number" value="0" title="@{language}"/>
+    <input class="skill-input" name="attr_language_bonus" type="number" value="0" title="@{language_bonus}"/>
+    <input class="skill-input" name="attr_language_total" type="number" value="0" title="@{language_total}"/>
+    <button class="roll-button" name="roll_language_roll" value="&{template:default} {{name= @{character_name} | Language Roll}} {{result=[[1d12 + @{language_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Magic</label>
+    <input class="skill-input" name="attr_magic" type="number" value="0" title="@{magic}"/>
+    <input class="skill-input" name="attr_magic_bonus" type="number" value="0" title="@{magic_bonus}"/>
+    <input class="skill-input" name="attr_magic_total" type="number" value="0" title="@{magic_total}"/>
+    <button class="roll-button" name="roll_magic_roll" value="&{template:default} {{name= @{character_name} | Magic Roll}} {{result=[[1d12 + @{magic_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Medicine</label>
+    <input class="skill-input" name="attr_medicine" type="number" value="0" title="@{medicine}"/>
+    <input class="skill-input" name="attr_medicine_bonus" type="number" value="0" title="@{medicine_bonus}"/>
+    <input class="skill-input" name="attr_medicine_total" type="number" value="0" title="@{medicine_total}"/>
+    <button class="roll-button" name="roll_medicine_roll" value="&{template:default} {{name= @{character_name} | Medicine Roll}} {{result=[[1d12 + @{medicine_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Riding</label>
+    <input class="skill-input" name="attr_riding" type="number" value="0" title="@{riding}"/>
+    <input class="skill-input" name="attr_riding_bonus" type="number" value="0" title="@{riding_bonus}"/>
+    <input class="skill-input" name="attr_riding_total" type="number" value="0" title="@{riding_total}"/>
+    <button class="roll-button" name="roll_riding_roll" value="&{template:default} {{name= @{character_name} | Riding Roll}} {{result=[[1d12 + @{riding_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Sailing</label>
+    <input class="skill-input" name="attr_sailing" type="number" value="0" title="@{sailing}"/>
+    <input class="skill-input" name="attr_sailing_bonus" type="number" value="0" title="@{sailing_bonus}"/>
+    <input class="skill-input" name="attr_sailing_total" type="number" value="0" title="@{sailing_total}"/>
+    <button class="roll-button" name="roll_sailing_roll" value="&{template:default} {{name= @{character_name} | Sailing Roll}} {{result=[[1d12 + @{sailing_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Stealth</label>
+    <input class="skill-input" name="attr_stealth" type="number" value="0" title="@{stealth}"/>
+    <input class="skill-input" name="attr_stealth_bonus" type="number" value="0" title="@{stealth_bonus}"/>
+    <input class="skill-input" name="attr_stealth_total" type="number" value="0" title="@{stealth_total}"/>
+    <button class="roll-button" name="roll_stealth_roll" value="&{template:default} {{name= @{character_name} | Stealth Roll}} {{result=[[1d12 + @{stealth_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Supernatural</label>
+    <input class="skill-input" name="attr_supernatural" type="number" value="0" title="@{supernatural}"/>
+    <input class="skill-input" name="attr_supernatural_bonus" type="number" value="0" title="@{supernatural_bonus}"/>
+    <input class="skill-input" name="attr_supernatural_total" type="number" value="0" title="@{supernatural_total}"/>
+    <button class="roll-button" name="roll_supernatural_roll" value="&{template:default} {{name= @{character_name} | Supernatural Roll}} {{result=[[1d12 + @{supernatural_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+    <label class="skill-label">Survival</label>
+    <input class="skill-input" name="attr_survival" type="number" value="0" title="@{survival}"/>
+    <input class="skill-input" name="attr_survival_bonus" type="number" value="0" title="@{survival_bonus}"/>
+    <input class="skill-input" name="attr_survival_total" type="number" value="0" title="@{survival_total}"/>
+    <button class="roll-button" name="roll_survival_roll" value="&{template:default} {{name= @{character_name} | Survival Roll}} {{result=[[1d12 + @{survival_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
+    </button>
+  </div>
+  <div class="other-elements" name="attr_other_elements" title="@{other_elements}">
+    <label class="header-label">Armor</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_armor" title="@{armor}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_armor" placeholder="Enter armor details here..." title="@{armor}"></textarea>
+    </div>
+    <div class="weapon-grid" name="attr_weapon_grid_one" title="@{weapon_grid_one}">
+      <label class="header-label startspan3">Weapon One</label>
+      <label class="input-label"><span class="input-label__text" data-i18n="Damage Die"></span>
+        <select class="input-label__input" name="attr_damage_die_one" title="@{damage_die_one}">
+          <option value="d4">d4
+          </option>
+          <option value="d6">d6
+          </option>
+          <option value="d8">d8
+          </option>
+          <option value="d10">d10
+          </option>
+          <option value="d12">d12
+          </option>
+        </select>
+      </label>
+      <label class="input-label"><span class="input-label__text" data-i18n="Type"></span>
+        <select class="input-label__input" name="attr_weapon_one_type" title="@{weapon_one_type}">
+          <option value="steel">Steel
+          </option>
+          <option value="blackiron">Black Iron
+          </option>
+          <option value="silver">Silver
+          </option>
+          <option value="bronze">Bronze
+          </option>
+          <option value="natural">Natural
+          </option>
+        </select>
+      </label>
+      <button class="roll-button grid-left" name="roll_weapon_one_damage_roll" value="&{template:default} {{name= @{character_name} | Weapon One Attack Roll}} [[1d12+@{combat_total} + ?{Circumstance Bonus|0}]] [[ [[?{Total Damage Dice?|1}@{damage_die_one}]] * 2 ]] {{attack=$[[0]]}} {{damage=$[[1]]}}  {{Crit Damage=$[[2]]}}" type="roll">
+      </button>
+      <div class="adaptive adaptive--text startspan3"><span class="adaptive--text__span" name="attr_weapon_one" title="@{weapon_one}"></span>
+        <textarea class="adaptive--text__textarea" name="attr_weapon_one" placeholder="Enter first weapon details here..." title="@{weapon_one}"></textarea>
+      </div>
+    </div>
+    <div class="weapon-grid" name="attr_weapon_grid_one" title="@{weapon_grid_one}">
+      <label class="header-label startspan3">Weapon Two</label>
+      <label class="input-label"><span class="input-label__text" data-i18n="Damage Die"></span>
+        <select class="input-label__input" name="attr_damage_die_two" title="@{damage_die_two}">
+          <option value="d4">d4
+          </option>
+          <option value="d6">d6
+          </option>
+          <option value="d8">d8
+          </option>
+          <option value="d10">d10
+          </option>
+          <option value="d12">d12
+          </option>
+        </select>
+      </label>
+      <label class="input-label"><span class="input-label__text" data-i18n="Type"></span>
+        <select class="input-label__input" name="attr_weapon_two_type" title="@{weapon_two_type}">
+          <option value="steel">Steel
+          </option>
+          <option value="blackiron">Black Iron
+          </option>
+          <option value="silver">Silver
+          </option>
+          <option value="bronze">Bronze
+          </option>
+          <option value="natural">Natural
+          </option>
+        </select>
+      </label>
+      <button class="roll-button grid-left" name="roll_weapon_two_damage_roll" value="&{template:default} {{name= @{character_name} | Weapon Two Attack Roll}} [[1d12+@{combat_total} + ?{Circumstance Bonus|0}]] [[ [[?{Total Damage Dice?|1}@{damage_die_two}]] * 2 ]] {{attack=$[[0]]}} {{damage=$[[1]]}}  {{Crit Damage=$[[2]]}}" type="roll">
+      </button>
+      <div class="adaptive adaptive--text startspan3"><span class="adaptive--text__span" name="attr_weapon_two" title="@{weapon_two}"></span>
+        <textarea class="adaptive--text__textarea" name="attr_weapon_two" placeholder="Enter second weapon details here..." title="@{weapon_two}"></textarea>
+      </div>
+    </div>
+    <label class="header-label">Passive Abilities</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_passives" title="@{passives}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_passives" placeholder="Enter passive abilities here..." title="@{passives}"></textarea>
+    </div>
+    <label class="header-label">Actions</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_actions" title="@{actions}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_actions" placeholder="Enter actions here..." title="@{actions}"></textarea>
+    </div>
+    <label class="header-label">Maneuvers</label>
+    <label class="input-label"><span class="input-label__text" data-i18n="Maneuver Used?"></span>
+      <input class="input-label__input" name="attr_manueverused" type="checkbox" title="@{manueverused}"/>
+    </label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_maneuvers" title="@{maneuvers}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_maneuvers" placeholder="Enter maneuvers here..." title="@{maneuvers}"></textarea>
+    </div>
+    <label class="header-label">Perks</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_perks" title="@{perks}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_perks" placeholder="Enter perks here..." title="@{perks}"></textarea>
+    </div>
+  </div>
+  <div class="other-block" name="attr_languages" title="@{languages}">
+    <label class="header-label">Languages</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_languages" title="@{languages}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_languages" placeholder="(2 + Language Skill)" title="@{languages}"></textarea>
+    </div>
+  </div>
+  <div class="other-block" name="attr_fighting_styles" title="@{fighting_styles}">
+    <label class="header-label">Fighting Styles</label>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_fighting_styles" title="@{fighting_styles}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_fighting_styles" placeholder="(2 + Combat Skill)" title="@{fighting_styles}"></textarea>
+    </div>
+  </div>
+  <div class="span2 other-block" name="attr_equipment" title="@{equipment}">
+    <label class="header-label">Equipment</label>
+    <div class="equipment-grid" name="attr_equipment_grid" title="@{equipment_grid}">
+      <label class="input-label"><span class="input-label__text" data-i18n="Crowns"></span>
+        <input class="input-label__input" name="attr_crowns" type="number" title="@{crowns}"/>
+      </label>
+      <label class="input-label"><span class="input-label__text" data-i18n="Marks"></span>
+        <input class="input-label__input" name="attr_marks" type="number" title="@{marks}"/>
+      </label>
+      <label class="input-label"><span class="input-label__text" data-i18n="Total Weight"></span>
+        <input class="input-label__input" name="attr_total_weight" type="number" title="@{total_weight}"/>
+      </label>
+    </div>
+    <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_equipment" title="@{equipment}"></span>
+      <textarea class="adaptive--text__textarea" name="attr_equipment" placeholder="Enter equipment here..." title="@{equipment}"></textarea>
+    </div>
+  </div>
       </article>
       <article class="tabs__container tabs--hordewarsadvanced__container tabs--hordewarsadvanced__container--npc" data-container-tab="hordewarsadvanced" data-tab="npc">
       </article>
       <article class="tabs__container tabs--hordewarsadvanced__container tabs--hordewarsadvanced__container--settings" data-container-tab="hordewarsadvanced" data-tab="settings">
-  <h1>Congratulations, your sheet project is started!</h1>
       </article>
     </div>
   </div>
@@ -44,7 +476,7 @@
   const k = (function(){
   const kFuncs = {};
   
-  const cascades = {"attr_character_name":{"name":"character_name","type":"text","defaultValue":"","affects":[],"triggeredFuncs":["setActionCalls"],"listenerFunc":"accessSheet","listener":"change:character_name"},"act_k-network-call":{"name":"k-network-call","type":"action","triggeredFuncs":["kReceive"],"affects":[],"addFuncs":[],"listener":"clicked:k-network-call","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sheet_version":{"name":"sheet_version","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sheet_version","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_hordewarsadvanced_tab":{"name":"hordewarsadvanced_tab","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:hordewarsadvanced_tab","listenerFunc":"accessSheet","defaultValue":"nav-tabs-hordewarsadvanced--character","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-hordewarsadvanced--character":{"name":"nav-tabs-hordewarsadvanced--character","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-hordewarsadvanced--character","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-hordewarsadvanced--npc":{"name":"nav-tabs-hordewarsadvanced--npc","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-hordewarsadvanced--npc","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-hordewarsadvanced--settings":{"name":"nav-tabs-hordewarsadvanced--settings","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-hordewarsadvanced--settings","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_header":{"name":"header","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:header","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_template_start":{"name":"template_start","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:template_start","listenerFunc":"accessSheet","defaultValue":"@{whisper}&{template:hordewarsadvanced} {{character_name=@{character_name}}} {{character_id=@{character_id}}}","calculation":"","initialFunc":"","formula":""}};
+  const cascades = {"attr_character_name":{"name":"character_name","type":"text","defaultValue":"","affects":[],"triggeredFuncs":["setActionCalls"],"listenerFunc":"accessSheet","listener":"change:character_name"},"act_k-network-call":{"name":"k-network-call","type":"action","triggeredFuncs":["kReceive"],"affects":[],"addFuncs":[],"listener":"clicked:k-network-call","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sheet_version":{"name":"sheet_version","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sheet_version","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_header":{"name":"header","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:header","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_hordewarsadvanced_tab":{"name":"hordewarsadvanced_tab","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:hordewarsadvanced_tab","listenerFunc":"accessSheet","defaultValue":"nav-tabs-hordewarsadvanced--character","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-hordewarsadvanced--character":{"name":"nav-tabs-hordewarsadvanced--character","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-hordewarsadvanced--character","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-hordewarsadvanced--npc":{"name":"nav-tabs-hordewarsadvanced--npc","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-hordewarsadvanced--npc","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-hordewarsadvanced--settings":{"name":"nav-tabs-hordewarsadvanced--settings","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-hordewarsadvanced--settings","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_level":{"name":"level","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:level","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_species":{"name":"species","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:species","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_experience1":{"name":"experience1","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience1","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience2":{"name":"experience2","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience2","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience3":{"name":"experience3","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience3","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience4":{"name":"experience4","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience4","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience5":{"name":"experience5","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience5","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience6":{"name":"experience6","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience6","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience7":{"name":"experience7","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience7","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience8":{"name":"experience8","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience8","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience9":{"name":"experience9","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience9","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience10":{"name":"experience10","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience10","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience11":{"name":"experience11","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience11","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_experience12":{"name":"experience12","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:experience12","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_career_one":{"name":"career_one","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:career_one","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_speed":{"name":"speed","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:speed","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_career_two":{"name":"career_two","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:career_two","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_tier":{"name":"tier","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:tier","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_fitness":{"name":"fitness","type":"number","triggeredFuncs":[],"affects":["fitness_total"],"addFuncs":[],"listener":"change:fitness","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_fitness_bonus":{"name":"fitness_bonus","type":"number","triggeredFuncs":[],"affects":["fitness_total"],"addFuncs":[],"listener":"change:fitness_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_fitness_total":{"name":"fitness_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:fitness_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{fitness} + @{fitness_bonus}"},"attr_reflexes":{"name":"reflexes","type":"number","triggeredFuncs":[],"affects":["reflexes_total"],"addFuncs":[],"listener":"change:reflexes","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_reflexes_bonus":{"name":"reflexes_bonus","type":"number","triggeredFuncs":[],"affects":["reflexes_total"],"addFuncs":[],"listener":"change:reflexes_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_reflexes_total":{"name":"reflexes_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:reflexes_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{reflexes} + @{reflexes_bonus}"},"attr_senses":{"name":"senses","type":"number","triggeredFuncs":[],"affects":["senses_total"],"addFuncs":[],"listener":"change:senses","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_senses_bonus":{"name":"senses_bonus","type":"number","triggeredFuncs":[],"affects":["senses_total"],"addFuncs":[],"listener":"change:senses_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_senses_total":{"name":"senses_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:senses_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{senses} + @{senses_bonus}"},"attr_willpower":{"name":"willpower","type":"number","triggeredFuncs":[],"affects":["willpower_total"],"addFuncs":[],"listener":"change:willpower","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_willpower_bonus":{"name":"willpower_bonus","type":"number","triggeredFuncs":[],"affects":["willpower_total"],"addFuncs":[],"listener":"change:willpower_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_willpower_total":{"name":"willpower_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:willpower_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{willpower} + @{willpower_bonus}"},"attr_defense":{"name":"defense","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:defense","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_hit_points":{"name":"hit_points","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:hit_points","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_protection_and_immunity":{"name":"protection_and_immunity","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:protection_and_immunity","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_art_and_culture":{"name":"art_and_culture","type":"number","triggeredFuncs":[],"affects":["art_and_culture_total"],"addFuncs":[],"listener":"change:art_and_culture","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_art_and_culture_bonus":{"name":"art_and_culture_bonus","type":"number","triggeredFuncs":[],"affects":["art_and_culture_total"],"addFuncs":[],"listener":"change:art_and_culture_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_art_and_culture_total":{"name":"art_and_culture_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:art_and_culture_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{art_and_culture} + @{art_and_culture_bonus}"},"attr_astronomy":{"name":"astronomy","type":"number","triggeredFuncs":[],"affects":["astronomy_total"],"addFuncs":[],"listener":"change:astronomy","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_astronomy_bonus":{"name":"astronomy_bonus","type":"number","triggeredFuncs":[],"affects":["astronomy_total"],"addFuncs":[],"listener":"change:astronomy_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_astronomy_total":{"name":"astronomy_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:astronomy_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{astronomy} + @{astronomy_bonus}"},"attr_athletics":{"name":"athletics","type":"number","triggeredFuncs":[],"affects":["athletics_total"],"addFuncs":[],"listener":"change:athletics","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_athletics_bonus":{"name":"athletics_bonus","type":"number","triggeredFuncs":[],"affects":["athletics_total"],"addFuncs":[],"listener":"change:athletics_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_athletics_total":{"name":"athletics_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:athletics_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{athletics} + @{athletics_bonus}"},"attr_burglary":{"name":"burglary","type":"number","triggeredFuncs":[],"affects":["burglary_total"],"addFuncs":[],"listener":"change:burglary","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_burglary_bonus":{"name":"burglary_bonus","type":"number","triggeredFuncs":[],"affects":["burglary_total"],"addFuncs":[],"listener":"change:burglary_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_burglary_total":{"name":"burglary_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:burglary_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{burglary} + @{burglary_bonus}"},"attr_combat":{"name":"combat","type":"number","triggeredFuncs":[],"affects":["combat_total"],"addFuncs":[],"listener":"change:combat","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_combat_bonus":{"name":"combat_bonus","type":"number","triggeredFuncs":[],"affects":["combat_total"],"addFuncs":[],"listener":"change:combat_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_combat_total":{"name":"combat_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:combat_total","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":"@{combat} + @{combat_bonus}"},"attr_commerce":{"name":"commerce","type":"number","triggeredFuncs":[],"affects":["commerce_total"],"addFuncs":[],"listener":"change:commerce","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_commerce_bonus":{"name":"commerce_bonus","type":"number","triggeredFuncs":[],"affects":["commerce_total"],"addFuncs":[],"listener":"change:commerce_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_commerce_total":{"name":"commerce_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:commerce_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{commerce} + @{commerce_bonus}"},"attr_deception":{"name":"deception","type":"number","triggeredFuncs":[],"affects":["deception_total"],"addFuncs":[],"listener":"change:deception","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_deception_bonus":{"name":"deception_bonus","type":"number","triggeredFuncs":[],"affects":["deception_total"],"addFuncs":[],"listener":"change:deception_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_deception_total":{"name":"deception_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:deception_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{deception} + @{deception_bonus}"},"attr_engineering":{"name":"engineering","type":"number","triggeredFuncs":[],"affects":["engineering_total"],"addFuncs":[],"listener":"change:engineering","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_engineering_bonus":{"name":"engineering_bonus","type":"number","triggeredFuncs":[],"affects":["engineering_total"],"addFuncs":[],"listener":"change:engineering_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_engineering_total":{"name":"engineering_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:engineering_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{engineering} + @{engineering_bonus}"},"attr_faith":{"name":"faith","type":"number","triggeredFuncs":[],"affects":["faith_total"],"addFuncs":[],"listener":"change:faith","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_faith_bonus":{"name":"faith_bonus","type":"number","triggeredFuncs":[],"affects":["faith_total"],"addFuncs":[],"listener":"change:faith_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_faith_total":{"name":"faith_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:faith_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{faith} + @{faith_bonus}"},"attr_history_and_law":{"name":"history_and_law","type":"number","triggeredFuncs":[],"affects":["history_and_law_total"],"addFuncs":[],"listener":"change:history_and_law","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_history_and_law_bonus":{"name":"history_and_law_bonus","type":"number","triggeredFuncs":[],"affects":["history_and_law_total"],"addFuncs":[],"listener":"change:history_and_law_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_history_and_law_total":{"name":"history_and_law_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:history_and_law_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{history_and_law} + @{history_and_law_bonus}"},"attr_influence":{"name":"influence","type":"number","triggeredFuncs":[],"affects":["influence_total"],"addFuncs":[],"listener":"change:influence","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_influence_bonus":{"name":"influence_bonus","type":"number","triggeredFuncs":[],"affects":["influence_total"],"addFuncs":[],"listener":"change:influence_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_influence_total":{"name":"influence_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:influence_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{influence} + @{influence_bonus}"},"attr_intuition":{"name":"intuition","type":"number","triggeredFuncs":[],"affects":["intuition_total"],"addFuncs":[],"listener":"change:intuition","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_intuition_bonus":{"name":"intuition_bonus","type":"number","triggeredFuncs":[],"affects":["intuition_total"],"addFuncs":[],"listener":"change:intuition_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_intuition_total":{"name":"intuition_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:intuition_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{intuition} + @{intuition_bonus}"},"attr_investigate":{"name":"investigate","type":"number","triggeredFuncs":[],"affects":["investigate_total"],"addFuncs":[],"listener":"change:investigate","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_investigate_bonus":{"name":"investigate_bonus","type":"number","triggeredFuncs":[],"affects":["investigate_total"],"addFuncs":[],"listener":"change:investigate_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_investigate_total":{"name":"investigate_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:investigate_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{investigate} + @{investigate_bonus}"},"attr_language":{"name":"language","type":"number","triggeredFuncs":[],"affects":["language_total"],"addFuncs":[],"listener":"change:language","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_language_bonus":{"name":"language_bonus","type":"number","triggeredFuncs":[],"affects":["language_total"],"addFuncs":[],"listener":"change:language_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_language_total":{"name":"language_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:language_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{language} + @{language_bonus}"},"attr_magic":{"name":"magic","type":"number","triggeredFuncs":[],"affects":["magic_total"],"addFuncs":[],"listener":"change:magic","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_magic_bonus":{"name":"magic_bonus","type":"number","triggeredFuncs":[],"affects":["magic_total"],"addFuncs":[],"listener":"change:magic_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_magic_total":{"name":"magic_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:magic_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{magic} + @{magic_bonus}"},"attr_medicine":{"name":"medicine","type":"number","triggeredFuncs":[],"affects":["medicine_total"],"addFuncs":[],"listener":"change:medicine","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_medicine_bonus":{"name":"medicine_bonus","type":"number","triggeredFuncs":[],"affects":["medicine_total"],"addFuncs":[],"listener":"change:medicine_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_medicine_total":{"name":"medicine_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:medicine_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{medicine} + @{medicine_bonus}"},"attr_riding":{"name":"riding","type":"number","triggeredFuncs":[],"affects":["riding_total"],"addFuncs":[],"listener":"change:riding","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_riding_bonus":{"name":"riding_bonus","type":"number","triggeredFuncs":[],"affects":["riding_total"],"addFuncs":[],"listener":"change:riding_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_riding_total":{"name":"riding_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:riding_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{riding} + @{riding_bonus}"},"attr_sailing":{"name":"sailing","type":"number","triggeredFuncs":[],"affects":["sailing_total"],"addFuncs":[],"listener":"change:sailing","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_sailing_bonus":{"name":"sailing_bonus","type":"number","triggeredFuncs":[],"affects":["sailing_total"],"addFuncs":[],"listener":"change:sailing_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_sailing_total":{"name":"sailing_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sailing_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{sailing} + @{sailing_bonus}"},"attr_stealth":{"name":"stealth","type":"number","triggeredFuncs":[],"affects":["stealth_total"],"addFuncs":[],"listener":"change:stealth","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_stealth_bonus":{"name":"stealth_bonus","type":"number","triggeredFuncs":[],"affects":["stealth_total"],"addFuncs":[],"listener":"change:stealth_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_stealth_total":{"name":"stealth_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:stealth_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{stealth} + @{stealth_bonus}"},"attr_supernatural":{"name":"supernatural","type":"number","triggeredFuncs":[],"affects":["supernatural_total"],"addFuncs":[],"listener":"change:supernatural","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_supernatural_bonus":{"name":"supernatural_bonus","type":"number","triggeredFuncs":[],"affects":["supernatural_total"],"addFuncs":[],"listener":"change:supernatural_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_supernatural_total":{"name":"supernatural_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:supernatural_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{supernatural} + @{supernatural_bonus}"},"attr_survival":{"name":"survival","type":"number","triggeredFuncs":[],"affects":["survival_total"],"addFuncs":[],"listener":"change:survival","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_survival_bonus":{"name":"survival_bonus","type":"number","triggeredFuncs":[],"affects":["survival_total"],"addFuncs":[],"listener":"change:survival_bonus","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":""},"attr_survival_total":{"name":"survival_total","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:survival_total","listenerFunc":"accessSheet","defaultValue":"0","calculation":"","initialFunc":"","formula":"@{survival} + @{survival_bonus}"},"attr_armor":{"name":"armor","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:armor","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_damage_die_one":{"name":"damage_die_one","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:damage_die_one","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_weapon_one_type":{"name":"weapon_one_type","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:weapon_one_type","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_weapon_one":{"name":"weapon_one","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:weapon_one","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_damage_die_two":{"name":"damage_die_two","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:damage_die_two","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_weapon_two_type":{"name":"weapon_two_type","type":"select","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:weapon_two_type","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_weapon_two":{"name":"weapon_two","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:weapon_two","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_passives":{"name":"passives","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:passives","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_actions":{"name":"actions","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:actions","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_manueverused":{"name":"manueverused","type":"checkbox","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:manueverused","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_maneuvers":{"name":"maneuvers","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:maneuvers","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_perks":{"name":"perks","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:perks","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_languages":{"name":"languages","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:languages","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_fighting_styles":{"name":"fighting_styles","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:fighting_styles","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_crowns":{"name":"crowns","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:crowns","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_marks":{"name":"marks","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:marks","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_total_weight":{"name":"total_weight","type":"number","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:total_weight","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_equipment":{"name":"equipment","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:equipment","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_template_start":{"name":"template_start","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:template_start","listenerFunc":"accessSheet","defaultValue":"@{whisper}&{template:hordewarsadvanced} {{character_name=@{character_name}}} {{character_id=@{character_id}}}","calculation":"","initialFunc":"","formula":""}};
   
   kFuncs.cascades = cascades;
   
