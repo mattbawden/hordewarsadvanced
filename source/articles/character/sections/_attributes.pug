@@ -20,9 +20,12 @@
     +input({name:'willpower bonus',type:'number',value:'0', trigger:{affects:['willpower_total']}}).attribute-input    
     +input({name:'willpower total',type:'number',value:'0', trigger:{formula:'@{willpower} + @{willpower_bonus}'}}).attribute-input
     +button({name: 'willpower roll', value: '&{template:default} {{name= @{character_name} | Willpower Roll}} {{result=[[1d12 + @{willpower_total} + ?{Circumstance Bonus|0}]]}}'}).roll-button
-+div({name:'other attributes})'}).other-attributes
++div({name:'other attributes'}).other-attributes
     +input-label({inputObj:{name:'defense', type:'number'},spanObj:{'data-i18n':'Defense'}})
     +input-label({inputObj:{name:'hit points', type:'number'},spanObj:{'data-i18n':'Hit Points'}})
+    +div({name:'initiative grid'}).initiative-grid
+        label(class='header-label') Initiative
+        +button({name: 'initiative roll', value: '&{template:default} {{name= @{character_name} | Initiative Roll}} {{result=[[1d12 + @{reflexes_total} + ?{Circumstance Bonus|0} &{tracker}]]}}'}).roll-button
     label(class='header-label') Protection & Immunity
     +adaptiveTextarea({name:'protection and immunity', placeholder:'Enter Protections & Immunities here...'  })
 +div({name:'skill grid'}).skill-grid

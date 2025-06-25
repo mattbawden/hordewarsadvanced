@@ -1238,6 +1238,12 @@ body .ui-dialog .tab-content .charsheet #main .skill-grid {
   grid-template-rows: min-content;
   border: 1px solid black;
 }
+body .ui-dialog .tab-content .charsheet #main .initiative-grid {
+  display: grid;
+  grid-template-columns: 100px 20px;
+  grid-template-rows: min-content;
+  column-gap: 10px;
+}
 body .ui-dialog .tab-content .charsheet #main .weapon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 20px;
@@ -1327,16 +1333,7 @@ body .ui-dialog .tab-content .charsheet #main .radio-input:has(~ .radiobox:check
   background-color: black;
 }
 body.sheet-darkmode {
-  --backColor:var(--dm-backColor);
-  --selectedColor:var(--dm-selectedColor);
-  --unselectedColor1:var(--dm-unselectedColor1);
-  --unselectedColor2:var(--dm-unselectedColor2);
-  --checkColor:var(--dm-checkColor);
-  --checkedBackColor:var(--dm-checkedBackColor);
-  --borderColor:var(--dm-borderColor);
-  --fontColor:var(--dm-fontColor);
-  --disabledColor:var(--dm-disabledColor);
-  --fontColor: black;
+  color: black;
 }
 
 .sheet-rolltemplate-template-name {
@@ -1506,7 +1503,6 @@ body.sheet-darkmode {
   --borderColor:var(--dm-borderColor);
   --fontColor:var(--dm-fontColor);
   --disabledColor:var(--dm-disabledColor);
-  --fontColor: black;
 }
 .sheet-rolltemplate-template-name .sheet-template {
   position: relative;

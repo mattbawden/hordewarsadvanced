@@ -189,13 +189,18 @@
     <button class="roll-button" name="roll_willpower_roll" value="&{template:default} {{name= @{character_name} | Willpower Roll}} {{result=[[1d12 + @{willpower_total} + ?{Circumstance Bonus|0}]]}}" type="roll">
     </button>
   </div>
-  <div class="other-attributes" name="attr_other_attributes})" title="@{other_attributes})}">
+  <div class="other-attributes" name="attr_other_attributes" title="@{other_attributes}">
     <label class="input-label"><span class="input-label__text" data-i18n="Defense"></span>
       <input class="input-label__input" name="attr_defense" type="number" title="@{defense}"/>
     </label>
     <label class="input-label"><span class="input-label__text" data-i18n="Hit Points"></span>
       <input class="input-label__input" name="attr_hit_points" type="number" title="@{hit_points}"/>
     </label>
+    <div class="initiative-grid" name="attr_initiative_grid" title="@{initiative_grid}">
+      <label class="header-label">Initiative</label>
+      <button class="roll-button" name="roll_initiative_roll" value="&{template:default} {{name= @{character_name} | Initiative Roll}} {{result=[[1d12 + @{reflexes_total} + ?{Circumstance Bonus|0} &{tracker}]]}}" type="roll">
+      </button>
+    </div>
     <label class="header-label">Protection & Immunity</label>
     <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_protection_and_immunity" title="@{protection_and_immunity}"></span>
       <textarea class="adaptive--text__textarea" name="attr_protection_and_immunity" placeholder="Enter Protections & Immunities here..." title="@{protection_and_immunity}"></textarea>

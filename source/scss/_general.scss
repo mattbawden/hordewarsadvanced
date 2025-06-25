@@ -135,6 +135,12 @@ body{
             grid-template-rows: min-content;
             border: 1px solid black;
           }
+          .initiative-grid{
+            display: grid;
+            grid-template-columns: 100px 20px;
+            grid-template-rows: min-content;
+            column-gap: 10px;
+          }
           .weapon-grid{
             display: grid;
             grid-template-columns: 1fr 1fr 20px;
@@ -229,6 +235,6 @@ body{
     }
   }
   &.sheet-darkmode{
-    @include variables.dark;
+    color: black;
   }
 }
