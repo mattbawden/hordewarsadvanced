@@ -23,6 +23,7 @@
 +div({name:'other attributes'}).other-attributes
     +input-label({inputObj:{name:'defense', type:'number'},spanObj:{'data-i18n':'Defense'}})
     +input-label({inputObj:{name:'hit points', type:'number'},spanObj:{'data-i18n':'Hit Points'}})
+    +input-lable({inputObj:{name:'max hit points', type:'number'},spanObj:{'data-i18n':'Max Hit Points'}})
     +div({name:'initiative grid'}).initiative-grid
         label(class='header-label') Initiative
         +button({name: 'initiative roll', value: '&{template:default} {{name= @{character_name} | Initiative Roll}} {{result=[[1d12 + @{reflexes_total} + ?{Circumstance Bonus|0} &{tracker}]]}}'}).roll-button
