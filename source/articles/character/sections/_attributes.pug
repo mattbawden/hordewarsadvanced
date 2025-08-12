@@ -23,7 +23,7 @@
 +div({name:'other attributes'}).other-attributes
     +input-label({inputObj:{name:'defense', type:'number'},spanObj:{'data-i18n':'Defense'}})
     +input-label({inputObj:{name:'hit points', type:'number'},spanObj:{'data-i18n':'Hit Points'}})
-    +input-lable({inputObj:{name:'max hit points', type:'number'},spanObj:{'data-i18n':'Max Hit Points'}})
+    +input-label({inputObj:{name:'max hit points', type:'number'},spanObj:{'data-i18n':'Max Hit Points'}})
     +div({name:'initiative grid'}).initiative-grid
         label(class='header-label') Initiative
         +button({name: 'initiative roll', value: '&{template:default} {{name= @{character_name} | Initiative Roll}} {{result=[[1d12 + @{reflexes_total} + ?{Circumstance Bonus|0} &{tracker}]]}}'}).roll-button
@@ -163,7 +163,7 @@
                 | Bronze
             +option({value:'natural'})
                 | Natural
-        +button({name: 'weapon one damage roll', value: '&{template:default} {{name= @{character_name} | Weapon One Attack Roll}} [[1d12+@{combat_total} + ?{Circumstance Bonus|0}]] [[ [[?{Total Damage Dice?|1}@{damage_die_one}]] * 2 ]] {{attack=$[[0]]}} {{damage=$[[1]]}}  {{Crit Damage=$[[2]]}}'}).roll-button.grid-left
+        +button({name: 'weapon one damage roll', value: '&{template:default} {{name= @{character_name} | Weapon One Attack Roll}} [[1d12+@{combat_total} + ?{Circumstance Bonus|0}]] [[ [[?{Total Damage Dice?|1}@{damage_die_one} + ?{Damage Bonus|0}]] * 2 ]] {{attack=$[[0]]}} {{damage=$[[1]]}}  {{Crit Damage=$[[2]]}}'}).roll-button.grid-left
         +adaptiveTextarea({name:'weapon one', placeholder:'Enter first weapon details here...'  }).startspan3
     +div({name:'weapon grid one'}).weapon-grid
         label(class='header-label startspan3') Weapon Two
@@ -189,7 +189,7 @@
                 | Bronze
             +option({value:'natural'})
                 | Natural
-        +button({name: 'weapon two damage roll', value: '&{template:default} {{name= @{character_name} | Weapon Two Attack Roll}} [[1d12+@{combat_total} + ?{Circumstance Bonus|0}]] [[ [[?{Total Damage Dice?|1}@{damage_die_two}]] * 2 ]] {{attack=$[[0]]}} {{damage=$[[1]]}}  {{Crit Damage=$[[2]]}}'}).roll-button.grid-left
+        +button({name: 'weapon two damage roll', value: '&{template:default} {{name= @{character_name} | Weapon Two Attack Roll}} [[1d12+@{combat_total} + ?{Circumstance Bonus|0}]] [[ [[?{Total Damage Dice?|1}@{damage_die_two} + ?{Damage Bonus|0}]] * 2 ]] {{attack=$[[0]]}} {{damage=$[[1]]}}  {{Crit Damage=$[[2]]}}'}).roll-button.grid-left
         +adaptiveTextarea({name:'weapon two', placeholder:'Enter second weapon details here...'  }).startspan3
     label(class='header-label') Passive Abilities
     +adaptiveTextarea({name:'passives', placeholder:'Enter passive abilities here...'  })
